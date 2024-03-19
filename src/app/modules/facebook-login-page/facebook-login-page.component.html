@@ -1,31 +1,97 @@
 <!-- login content -->
-<div class="pt-[72px] pb-[112px] bg-[#f0f2f5]">
-  <div class="flex m-[40px]">
+<div class="h-screen pt-[72px] pb-[112px] bg-[#f0f2f5]">
+  <div class="flex justify-evenly m-[40px]">
     <!-- logo -->
-    <div>
+    <div class="flex flex-col justify-center">
       <img
         src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
-        class="h-[100px] m-[-28px]"
+        class="h-[100px] ml-[-182px]"
       />
       <h2
-        class="text-[24px]"
-        style="font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif"
+        class="text-[28px]"
+        style="
+          font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          line-height: 32px;
+          width: 500px;
+        "
       >
         Facebook helps you connect and share with the people in your life.
       </h2>
     </div>
     <!-- form -->
-    <div>
-      <div class="bg-white">
-        hi
-        <mat-form-field appearance="outline">
-          <mat-label>Outline form field</mat-label>
-          <input matInput placeholder="Placeholder" />
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" required />
-        </mat-form-field>
+    <div class="flex flex-col">
+      <div>
+        <div
+          class="bg-white rounded-[8px] p-[20px]"
+          style="
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+              0 8px 16px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <div>
+            <mat-form-field class="w-[332px]" appearance="outline">
+              <input matInput placeholder="Email address or Phone number" />
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field class="w-[332px]" appearance="outline">
+              <input matInput placeholder="Password" />
+            </mat-form-field>
+          </div>
+          <div>
+            <button
+              mat-raised-button
+              style="
+                background-color: #0866ff;
+                color: white;
+                border-radius: 6px;
+                padding: 0 16px;
+                width: 332px;
+                font-size: 20px;
+                line-height: 48px;
+                height: 50px;
+              "
+              class="text-white"
+            >
+              Log in
+            </button>
+          </div>
+          <div
+            class="my-3 text-center text-[#0866ff] text-[14px] font-normal cursor-pointer hover:underline"
+          >
+            Forgotten password?
+          </div>
+          <div class="bg-[#dadde1] border-[1px] my-5 mx-4"></div>
+          <div class="my-3 flex justify-center">
+            <button
+              mat-raised-button
+              style="
+                background-color: #42b72a;
+                color: white;
+                border-radius: 6px;
+                padding: 0 16px;
+                width: 190px;
+                font-size: 14px;
+                height: 50px;
+              "
+              class="text-white"
+            >
+              Create new account
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        style="font-family: SFProText-Regular, Helvetica, Arial, sans-serif"
+        class="text-center mt-6"
+      >
+        <span class="font-semibold text-[#1c1e21] text-[14px]"
+          >Create a Page</span
+        >
+        <span class="ml-[2px] text-[#1c1e21] text-[14px]"
+          >for a celebrity, brand or business.</span
+        >
       </div>
     </div>
   </div>
