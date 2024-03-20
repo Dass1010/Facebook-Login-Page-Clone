@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 let MATERIAL_MODULES = [
   MatToolbarModule,
   MatIconModule,
@@ -15,6 +17,7 @@ let MATERIAL_MODULES = [
   MatInputModule,
   ReactiveFormsModule,
   FormsModule,
+  MatCheckboxModule
 ];
 
 @NgModule({
